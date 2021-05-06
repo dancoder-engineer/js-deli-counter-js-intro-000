@@ -2,6 +2,7 @@ var katzDeliLine = [];
 var otherDeli = ["Steven", "Blake", "Avi"];
 
 function takeANumber(line,name) {
+<<<<<<< HEAD
   line[line.length] = name
   return `Welcome, ${name}. You are number ${line.length} in line.`
   }
@@ -42,3 +43,15 @@ function currentLine(line) {
 
 console.log(currentLine(otherDeli))
 console.log(currentLine(katzDeliLine))
+=======
+  var len
+  katzDeliLine[line.length+1] = name
+  len = line.length
+  return `Welcome, ${name}. You are number ${len} in line.`
+  }
+  
+console.log(takeANumber(otherDeli,"a"))
+console.log(takeANumber(katzDeliLine,"a"))
+console.log(takeANumber(katzDeliLine,"a"))
+console.log(otherDeli)
+>>>>>>> c1d8439de8452a5a3ffb689b0a003e6ca501d916
